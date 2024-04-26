@@ -21,8 +21,8 @@ Projenin kurulumu için aşağıdaki adımları izleyebilirsiniz:
 1. Projeyi indirin veya GitHub'dan klonlayın.
 2. Dosyaları bir klasöre çıkarın.
 3. Gerekli bağımlılıkları yükleyin (örneğin, Composer kullanarak).
-4. Projenin ana dizinine gidin ve `config.php` dosyasını yapılandırın.
-5. Tarayıcınızda, web sitenizin adresine giderek kurulum sihirbazını takip edin.
+4. Projenin ana dizinine gidin ve `app/system/database/db_connect.php` dosyasını yapılandırın.
+5. Veritabanına `app/system/database/.sql` dosyasını içe aktar yöntemiyle kurun.
 
 ## Katkıda Bulunma
 
