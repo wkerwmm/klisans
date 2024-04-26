@@ -8,10 +8,10 @@ Bu projenin amacı, Lisans Yönetimi Yazılımı'nın bir örneğini oluşturara
 
 ## Kullanılan Yazılımlar
 
-- PHP: %85
-- HTML: %85
-- CSS: %65
-- CURL: %55
+- PHP: ![progress](https://progress-bar.dev/85)
+- HTML: ![progress](https://progress-bar.dev/85)
+- CSS: ![progress](https://progress-bar.dev/65)
+- CURL: ![progress](https://progress-bar.dev/55)
 
 ## Özellikler
 
