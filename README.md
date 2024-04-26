@@ -6,6 +6,13 @@ Lisans Yönetimi Yazılımı, kurulu yazılım ve lisansların etkin bir şekild
 
 Bu projenin amacı, Lisans Yönetimi Yazılımı'nın bir örneğini oluşturarak kuruluşların lisanslama süreçlerini kolaylaştırmak ve izinsiz kullanımı engellemektir. Proje, PHP tabanlı uygulamalara entegre edilerek, izinsiz kullanımı engelleyen ve lisans uyumluluğunu koruyan bir sistem sunmayı hedeflemektedir.
 
+## Kullanılan Yazılımlar
+
+- PHP: %85
+- HTML: %85
+- CSS: %65
+- CURL: %55
+
 ## Özellikler
 
 - PHP tabanlı uygulamalara entegre edilebilme
