@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="mt-4">Not Ekle</h2>
+    <hr>
+    <form method="POST" action="{{ url_for('add_grade') }}">
+        <div class="form-group">
+            <label for="student_id">Öğrenci ID:</label>
+            <input type="text" class="form-control" id="student_id" name="student_id" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Ders Adı:</label>
+            <input type="text" class="form-control" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="grade1">Sınav 1 Notu:</label>
+            <input type="text" class="form-control" id="grade1" name="grade1" required>
+        </div>
+        <div class="form-group">
+            <label for="grade2">Sınav 2 Notu:</label>
+            <input type="text" class="form-control" id="grade2" name="grade2" required>
+        </div>
+        <div class="form-group">
+            <label for="performance1">Performans 1:</label>
+            <input type="text" class="form-control" id="performance1" name="performance1" required>
+        </div>
+        <div class="form-group">
+            <label for="performance2">Performans 2:</label>
+            <input type="text" class="form-control" id="performance2" name="performance2" required>
+        </div>
+        <div class="form-group">
+            <label for="project1">Proje 1:</label>
+            <input type="text" class="form-control" id="project1" name="project1" required>
+        </div>
+        <div class="form-group">
+            <label for="project2">Proje 2:</label>
+            <input type="text" class="form-control" id="project2" name="project2" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    </form>
+{% endblock %}
