@@ -1,6 +1,6 @@
 $validLicense = false;
 
-$verificationURL = "https://esmenya.com.tr/licence/verification";
+$verificationURL = "https://url.*/licence/verification";
 $clientIP = $_SERVER['REMOTE_ADDR'];
 
 function checkLicenseValidity($verificationURL, $clientIP) {
@@ -33,7 +33,7 @@ if(!$validLicense) {
 
 if ($validLicense) {
 } else {
-    $errorPage = file_get_contents("https://esmenya.com.tr/licence/invalid");
+    $errorPage = file_get_contents("https://url.*/licence/invalid");
     if ($errorPage === false) {
         die("Hata sayfası alınamadı.");
     }
