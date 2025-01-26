@@ -1,0 +1,11 @@
+[25-Feb-2024 19:00:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/vxtpfztp/public_html/app/system/request/verification.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vxtpfztp/public_html/app/system/request/verification.php on line 9
+[25-Feb-2024 19:02:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/vxtpfztp/public_html/app/system/request/verification.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vxtpfztp/public_html/app/system/request/verification.php on line 9
+[28-Feb-2024 09:36:46 UTC] PHP Parse error:  syntax error, unexpected 'site_settings' (T_STRING) in /home/vxtpfztp/public_html/app/system/request/eval.php(12) : eval()'d code on line 1
+[28-Feb-2024 09:39:23 UTC] PHP Parse error:  syntax error, unexpected 'site_settings' (T_STRING) in /home/vxtpfztp/public_html/app/system/request/eval.php(18) : eval()'d code on line 1
+[28-Feb-2024 09:39:39 UTC] PHP Parse error:  syntax error, unexpected 'site_settings' (T_STRING) in /home/vxtpfztp/public_html/app/system/request/eval.php(18) : eval()'d code on line 1

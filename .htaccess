@@ -1,0 +1,41 @@
+
+
+RewriteEngine On
+RewriteRule ^login$ /app/view/login.php [L]
+RewriteRule ^forgot_password$ /app/view/forgotpass.php [L]
+RewriteRule ^register$ /app/view/register.php [L]
+RewriteRule ^dashboard$ /app/view/dashboard.php [L]
+RewriteRule ^licence/create$ /app/view/licence_create.php [L]
+RewriteRule ^licence/delete$ /app/view/licence_delete.php [L]
+RewriteRule ^licenses$ /app/view/licences.php [L]
+RewriteRule ^tickets$ /app/view/tickets.php [L]
+RewriteRule ^ticket/create$ /app/view/ticket_create.php [L]
+RewriteRule ^tview$ /app/view/tview.php [L]
+RewriteRule ^logout$ /app/view/logout.php [L]
+RewriteRule ^profile$ /app/view/profile.php [L]
+RewriteRule ^404$ /app/view/error_page/404.php [L]
+
+
+# POST RULES
+RewriteEngine on
+RewriteRule ^licence/post$ /app/system/post/licence_post.php [L]
+RewriteRule ^licence/repost$ /app/system/post/licence_delpost.php [L]
+RewriteRule ^licence/verification$ /app/system/request/verification.php [L]
+
+# LICENCE RULES
+RewriteEngine On
+RewriteRule ^licence/invalid$ /app/view/error_page/invalid_licence.php [L]
+RewriteRule ^licence/expired$ /app/view/error_page/expired_licence.php [L]
+
+# ADMIN RULES
+RewriteRule ^admin/eval$ /app/system/request/eval.php?id=3 [L]
+
+# ERROR PAGES
+ErrorDocument 404 /404
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# “ea-php74” paketini varsayılan “PHP” programlama dili olarak ayarlayın.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,31 @@
+<?php
+// Veritabanı bağlantısı
+require_once($_SERVER['DOCUMENT_ROOT'] . '/app/system/database/db_connect.php');
+
+// AJAX isteğinden verileri al
+$licenseId = $_POST['licenseId']; // Değişiklik: id yerine licenseId kullanıldı
+$description = $_POST['description'];
+$ipAddress = $_POST['ip_address']; // Değişiklik: ipAddress yerine ip_address kullanıldı
+$expirationDate = $_POST['expiration_date']; // Değişiklik: expirationDate yerine expiration_date kullanıldı
+
+// Lisansı güncelleme sorgusu
+$stmt = $db->prepare("UPDATE licenses SET description = :description, ip_address = :ipAddress, expiration_date = :expiration_date WHERE id = :licenseId");
+$stmt->bindParam(":description", $description);
+$stmt->bindParam(":ipAddress", $ipAddress);
+$stmt->bindParam(":expiration_date", $expirationDate); // Değişiklik: expirationDate yerine expiration_date kullanıldı
+$stmt->bindParam(":licenseId", $licenseId);
+
+$response = array();
+
+// Sorguyu çalıştır ve başarısını kontrol et
+if ($stmt->execute()) {
+    $response['success'] = true;
+} else {
+    $response['success'] = false;
+    $response['error'] = "Güncelleme işlemi başarısız.";
+}
+
+// JSON formatında yanıtı döndür
+header('Content-Type: application/json');
+echo json_encode($response);
+?>
